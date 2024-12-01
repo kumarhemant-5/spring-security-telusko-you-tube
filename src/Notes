@@ -1,0 +1,48 @@
+# 1. When we are going to create software then we code and make workable by development, dev testing, QA testing and solving the bugs.
+  2. Non of software in market are bug proof. But we solve most common bug and we push in production and when our client face issue then,
+     we solve that bug.
+  3. If our development and QA work is done then we are going to implement the security in our application.
+     1. So for security we won't want to give access everyone to visit our application.
+        e.g:- Suppose there is Ecommerce project where buyer has buy option and seller has sell option, so we authenticate them on use case purpose.
+
+  4. How to implement spring security:-
+     a. If we are using servlet and JSP then implementing security is big task.
+        suppose if we take 10 hours to build the project then in security we have to spent 20 hours.
+     b. But spring security make is easy and complete in very less time.
+
+  5. OWASP :- Open web application security project.
+     a. On every 4 years It release some security issues when is most common issues which we can face in future so developer should focus
+        on them and make them secure.
+     Note: - If we are not using spring then we have to fix all of them one by one.
+             But when we using framework like spring security It takes care almost all the issues.
+             During development It warns us to secure all the issues.
+
+
+  6. To start use of spring security we have to add spring security dependency.
+
+     a. Now when we restart the project then spring security provide a login form and default user_name= user   and  password= printed on console.
+     b. Once when we login and again do login same url in other tab then It not asking for password. It get login. But when we login in
+        other browser or incognito tab then It ask for password. So by this session is also mantained.
+     c. for logout it provide url "/logout"
+     d. we can change user_name and password through application.properties or application.yml file.
+
+
+
+
+
+
+
+
+
+#  Agar hum Spring Security annotation ko use karen ge to ek default password dega aur bo use kar ke humlog login
+   kar sakatain hain.
+   - Jaise hi spring security dependency add kartain hai automaticlly ek login form milta hai
+   - default user_name= user   and  password= printed on console
+
+#  ek bar login kar ke dusare tab se login vi karen ge to login ho jayen ga isse  sessaion management vi ho jata hain.
+   - ek baar login hone ke baad sare api call kar sakatain hai kyo ki session mantain rahata hain.
+
+#  For logout
+   url/logout
+
+#  To change default password.

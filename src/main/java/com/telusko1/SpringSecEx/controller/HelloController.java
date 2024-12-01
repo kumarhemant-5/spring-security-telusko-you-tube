@@ -1,0 +1,22 @@
+package com.telusko1.SpringSecEx.controller;
+
+import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.function.Function;
+
+@RestController
+public class HelloController {
+
+ //   @RequestMapping(path = "/", method = RequestMethod.GET)
+    @GetMapping("/")
+    public String greet(HttpServletRequest request) {
+        return "Welcome to Telusko "+request.getSession().getId();
+    }
+
+
+
+
+
+}
